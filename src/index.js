@@ -10,7 +10,7 @@ const { URL } = require("./url");
 
 Apify.main(async () => {
 
-  const browser = await Apify.launchPuppeteer({ launchOptions: { headless: false } });
+  const browser = await Apify.launchPuppeteer({ launchOptions: { headless: true } });
 
   const page = await browser.newPage();
 
